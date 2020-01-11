@@ -13,7 +13,7 @@ public class Main {
                     m.invoke(ts,test.a(),test.b());
                 }
             }
-        } catch (NoSuchMethodException e){
+        } catch (ReflectiveOperationException e) {
             System.out.println(e.toString());
         }
 
